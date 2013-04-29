@@ -19,6 +19,7 @@ namespace NUnitLite.MonoDroid
     public class TestResultViewHolder: Java.Lang.Object
     {
         private TextView _descriptionTextView;
+				private TextView _countTextView;
         private View _indicatorView;
 
         /// <summary>
@@ -26,10 +27,11 @@ namespace NUnitLite.MonoDroid
         /// </summary>
         /// <param name="indicatorView"></param>
         /// <param name="descriptionTextView"></param>
-        public TestResultViewHolder(View indicatorView, TextView descriptionTextView)
+        public TestResultViewHolder(View indicatorView, TextView descriptionTextView, TextView countTextView)
         {
             _descriptionTextView = descriptionTextView;
             _indicatorView = indicatorView;
+						_countTextView = countTextView;
         }
 
         /// <summary>
@@ -47,5 +49,12 @@ namespace NUnitLite.MonoDroid
         {
             get { return _descriptionTextView; }
         }
+			/// <summary>
+			/// Gets the view for displaying the result counts
+			/// </summary>
+				public TextView CountTextView
+				{
+					get { return _countTextView; }
+				}
     }
 }

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>NUnitLite.Android</id>
+    <version>1.0.30426.1643</version>
+    <title>NUnitLite framework and runner for Android</title>
+    <authors>Andras.Zoltan</authors>
+    <owners>Andras.Zoltan</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provides access to a cut-down set of NUnit functionality for unit testing in Android, plus objects to facilitate running those tests.</description>
+    <releaseNotes>Can now re-run tests explicitly, and you get a summary of test counts passed/failed in the main screen.</releaseNotes>
+    <tags>nunitlite nunit android monodroid test</tags>
+  </metadata>
+  <files>
+    <file src="NUnitLite.MonoDroid\bin\Release\NUnitLite.dll" target="lib\MonoAndroid2.2\NUnitLite.dll" />
+    <file src="NUnitLite.MonoDroid\bin\Release\NUnitLite.dll.mdb" target="lib\MonoAndroid2.2\NUnitLite.dll.mdb" />
+    <file src="NUnitLite.MonoDroid.Runner\bin\Release\NUnitLite.MonoDroid.Runner.dll" target="lib\MonoAndroid2.2\NUnitLite.MonoDroid.Runner.dll" />
+    <file src="NUnitLite.MonoDroid.Runner\bin\Release\NUnitLite.MonoDroid.Runner.dll.mdb" target="lib\MonoAndroid2.2\NUnitLite.MonoDroid.Runner.dll.mdb" />
+    <file src="NUnitLite.MonoDroid.Runner\bin\Release\NUnitLite.MonoDroid.Runner.pdb" target="lib\MonoAndroid2.2\NUnitLite.MonoDroid.Runner.pdb" />
+    <file src="NUnitLite.MonoDroid.Runner\bin\Release\NUnitLite.MonoDroid.Runner.XML" target="lib\MonoAndroid2.2\NUnitLite.MonoDroid.Runner.XML" />
+    <file src="NUnitLite.MonoDroid\bin\Release\NUnitLite.pdb" target="lib\MonoAndroid2.2\NUnitLite.pdb" />
+    <file src="NUnitLite.MonoDroid\bin\Release\NUnitLite.XML" target="lib\MonoAndroid2.2\NUnitLite.XML" />
+  </files>
+</package>

@@ -15,6 +15,11 @@
     <AndroidApplication>true</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <AndroidSupportedAbis>armeabi-v7a%3bx86</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,6 +53,8 @@
   <ItemGroup>
     <Compile Include="DetailsActivity.cs" />
     <Compile Include="MainActivity.cs" />
+    <None Include="Nuget PPs\DetailsActivity.cs.pp" />
+    <None Include="Nuget PPs\MainActivity.cs.pp" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestFixture.cs" />
@@ -66,16 +73,20 @@
     <AndroidResource Include="Resources\Drawable\Icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Nuget PPs\NUnitLite.Android.UnitTests.ReadMe.txt.pp" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\NUnitLite.MonoDroid.Runner\NUnitLite.MonoDroid.Runner.csproj">
-      <Project>{7E10B3F0-F646-43E1-A301-04FB8FE7B81B}</Project>
+      <Project>{7e10b3f0-f646-43e1-a301-04fb8fe7b81b}</Project>
       <Name>NUnitLite.MonoDroid.Runner</Name>
     </ProjectReference>
     <ProjectReference Include="..\NUnitLite.MonoDroid\NUnitLite.MonoDroid.csproj">
-      <Project>{26327C81-7655-443D-9E04-443AC07BD6CC}</Project>
+      <Project>{26327c81-7655-443d-9e04-443ac07bd6cc}</Project>
       <Name>NUnitLite.MonoDroid</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

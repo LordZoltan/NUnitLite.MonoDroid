@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+	<metadata>
+		<id>NUnitLite.Android.UnitTests</id>
+		<version>1.0.30417.1408</version>
+		<title>NUnitLite Android unit test application</title>
+		<authors>Andras.Zoltan</authors>
+		<owners>Andras.Zoltan</owners>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Turns the current Xamarin.Android (or indeed MfA) project into a unit test application. Note, if you have a MainActivity.cs - delete it before adding this package.</description>
+		<summary />
+		<tags>nunitlite nunit android monodroid test</tags>
+		<dependencies>
+			<dependency id="NUnitLite.Android" version="[1.0.30417.1402,2)"/>
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="NUnitLite.MonoDroid.Example\Nuget PPs\DetailsActivity.cs.pp" target="content\DetailsActivity.cs.pp" />
+		<file src="NUnitLite.MonoDroid.Example\Nuget PPs\MainActivity.cs.pp" target="content\MainActivity.cs.pp" />
+		<file src="NUnitLite.MonoDroid.Example\Nuget PPs\NUnitLite.Android.UnitTests.ReadMe.txt.pp" target="content\NUnitLite.Android.UnitTests.ReadMe.txt.pp" />
+	</files>
+</package>

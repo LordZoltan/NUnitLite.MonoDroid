@@ -24,6 +24,7 @@
 using System;
 using System.Collections;
 using System.Reflection;
+using System.Text;
 using NUnit.Framework;
 
 namespace NUnitLite
@@ -200,5 +201,28 @@ namespace NUnitLite
             return false;
         }
         #endregion
+
+				#region ITest Members
+
+				private StringBuilder _output = new StringBuilder();
+				private string _outputCached;
+				public string Output
+				{
+					get
+					{
+						if (_outputCached == null)
+						{
+							_outputCached = _output.ToString();
+						}
+						return _outputCached;
+					}
+				}
+
+				public void Write(string format, params object[] args)
+				{
+					_output.AppendFormat(format, args);
+				}
+
+				#endregion
     }
 }

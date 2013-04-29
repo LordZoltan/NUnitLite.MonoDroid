@@ -23,9 +23,10 @@
 
 namespace NUnitLite
 {
-    public interface ITestListener
-    {
-        void TestStarted(ITest test);
-        void TestFinished(TestResult result);
-    }
+	public interface ITestListener
+	{
+		void TestStarted(ITest test);
+
+		void TestFinished(TestResult result);
+	}
 }

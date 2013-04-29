@@ -27,12 +27,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType>full</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\NUnitLite.MonoDroid.Runner.XML</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -50,14 +52,18 @@
     <Compile Include="TestRunInfo.cs" />
     <Compile Include="TestRunContext.cs" />
     <Compile Include="TestRunnerActivity.cs" />
+    <Compile Include="TestRunnerMenuHelper.cs" />
+    <Compile Include="TestRunnerOptionsActivity.cs" />
+    <Compile Include="TestRunnerUIPreferences.cs" />
     <Compile Include="UITestListener.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NUnitLite.MonoDroid\NUnitLite.MonoDroid.csproj">
-      <Project>{26327C81-7655-443D-9E04-443AC07BD6CC}</Project>
+      <Project>{26327c81-7655-443d-9e04-443ac07bd6cc}</Project>
       <Name>NUnitLite.MonoDroid</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

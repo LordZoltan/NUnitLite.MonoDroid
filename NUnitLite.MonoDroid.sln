@@ -1,11 +1,24 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitLite.MonoDroid", "NUnitLite.MonoDroid\NUnitLite.MonoDroid.csproj", "{26327C81-7655-443D-9E04-443AC07BD6CC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitLite.MonoDroid.Example", "NUnitLite.MonoDroid.Example\NUnitLite.MonoDroid.Example.csproj", "{42FEF2C3-62C7-432E-8240-18BF11AC2F1D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitLite.MonoDroid.Runner", "NUnitLite.MonoDroid.Runner\NUnitLite.MonoDroid.Runner.csproj", "{7E10B3F0-F646-43E1-A301-04FB8FE7B81B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{5892B8A5-7939-495B-8A1A-90C873586490}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{383EAD46-8330-4375-9157-4B894F1DCF92}"
+	ProjectSection(SolutionItems) = preProject
+		NUnitLite.Android.nuspec = NUnitLite.Android.nuspec
+		NUnitLite.Android.UnitTests.nuspec = NUnitLite.Android.UnitTests.nuspec
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

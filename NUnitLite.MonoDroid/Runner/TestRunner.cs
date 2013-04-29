@@ -89,5 +89,7 @@ namespace NUnitLite.Runner
             foreach (ITestListener listener in listeners)
                 listener.TestFinished(result);
         }
-    }
+
+				
+		}
 }

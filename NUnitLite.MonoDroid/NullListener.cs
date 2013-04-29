@@ -30,5 +30,5 @@ namespace NUnitLite
         public void TestStarted(ITest test) { }
 
         public void TestFinished(TestResult result) { }
-    }
+		}
 }
